@@ -1,5 +1,5 @@
 ##INTRODUCTION TO R####
-##JSG, 7/2/22
+##LL, 7/2/22
 
 #this is a broad introduction to how R works and what it can do
 #we'll return to individual topics in later sessions (both theory and practice)
@@ -92,7 +92,7 @@
 
 # a rather complicated calculator, but it works. keep going
 
-(2 + 2) 2
+(2 + 2)*2
 
 # first error! Realize that you have to put in operators, like
 
@@ -111,6 +111,7 @@ x <- 2
 #x is also now shown in your global environment pane, and you can call it in the console
 
 x
+
 
 #to see its value.  A few notes on naming things: follow styleguides by keeping it short,
 #simple, but descriptive.  Also try not to use an existing function name!
@@ -135,7 +136,6 @@ x + y
 
 
 #simple enough, but larger lists or objects work the same way
-
 x <- c(2, 2, 2, 2)
 class(x)
 x
@@ -248,7 +248,7 @@ file
 
 #which is then read by the read.csv function
 
-my_dataset <- read.csv(file, stringsAsFactors = T)
+my_dataset <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vQX65y1TkIp1FWErPBm3YIhzXbQVIkcC6HOXZGKz7eRmVY73czx587ZHrJhys_t8TZcnQhMGFner77B/pub?gid=0&single=true&output=csv", stringsAsFactors = T)
 
 # Since ~2020 you need to as StringsAsFactors = T to read in characters as factors
 # (what we typically want)
